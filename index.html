@@ -11,8 +11,10 @@
 
 <body>
     <div id="app">
+        <h1 v-once>{{ title }}</h1>
+        <p>The above, despite being the same title data, should not change when typing below</p>
         <input type="text" v-on:input="changeTitle">
-        <p>{{ title }} - <a v-bind:href="link">Google</a></p>
+        <p>{{ title }} - <a v-bind:href="link">Google</a></p>        
     </div>
     <script src="js/main.js"></script>
 </body>
