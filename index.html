@@ -16,7 +16,9 @@
         <input type="text" v-on:input="changeTitle">
         <p>{{ title }} - <a v-bind:href="link">Google</a></p>   
         <hr>
-        <p v-html="finishedLink"></p>     
+        <p v-html="finishedLink"></p>  
+        <hr>   
+        <button v-on:click="increaseCounter">Click me - {{clickCounter}}</button>
     </div>
     <script src="js/main.js"></script>
 </body>
