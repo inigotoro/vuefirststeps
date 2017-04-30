@@ -21,6 +21,8 @@
         <button v-on:click="increaseCounter">Click me - {{clickCounter}}</button>
         <hr>
         <p v-on:mousemove="updateCoordinates">Coordinates: {{coords.x}} / {{coords.y}}</p>
+        <hr>
+        <button v-on:click="increaseCounter(2, $event)">Click me - {{clickCounter}}</button>
     </div>
     <script src="js/main.js"></script>
 </body>

@@ -11,8 +11,9 @@ new Vue({
   	changeTitle: function(ev) {
     	this.title = ev.target.value;
     },
-    increaseCounter: function() {
-      this.clickCounter++;
+    increaseCounter: function(step, event) {
+      this.clickCounter+= parseInt(step) ? step : 1;
+      console.log(event);
     },
     updateCoordinates: function(ev) {
       this.coords.x = ev.clientX;
