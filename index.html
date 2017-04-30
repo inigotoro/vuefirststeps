@@ -19,6 +19,8 @@
         <p v-html="finishedLink"></p>  
         <hr>   
         <button v-on:click="increaseCounter">Click me - {{clickCounter}}</button>
+        <hr>
+        <p v-on:mousemove="updateCoordinates">Coordinates: {{coords.x}} / {{coords.y}}</p>
     </div>
     <script src="js/main.js"></script>
 </body>
